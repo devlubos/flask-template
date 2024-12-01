@@ -1,16 +1,15 @@
-from flask import Flask, render_template, request, flash
+from flask import Flask, render_template, request, flash, Blueprint
 
-app = Flask(__name__)
-app.secret_key = '1234'
+main_app = Blueprint('main_app', __name__)
 
 
-@app.route("/")
+@main_app.route("/")
 def index():
     flash("what's your name?")
     return render_template("index.html")
 
 
-@app.route("/greet", methods=["POST", "GET"])
+@main_app.route("/greet", methods=["POST", "GET"])
 def greet():
     flash("Hello there, " + str(request.form['name_input']))
     return render_template("index.html")
