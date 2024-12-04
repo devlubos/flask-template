@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Page 1{% endblock %}
+
+{% block content %}
+<h1 class="roboto-bold">Page 1</h1>
+{% for message in get_flashed_messages()%}
+    <p> {{message}} </p>
+{% endfor %}
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor id orci eget faucibus. 
+Nullam tristique suscipit pharetra. Aenean dapibus porta ex, at rutrum erat ultrices sed. 
+Donec in porta leo, finibus pulvinar ipsum. Integer nec lacus imperdiet, porttitor sapien in, ornare ligula. 
+Curabitur tempus orci aliquam leo bibendum dictum. Fusce mauris orci, eleifend vel felis id, auctor sollicitudin urna. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac pretium nisl.
+</p>
+<p>
+Sed mattis lacus eu erat commodo, et accumsan lacus sollicitudin. 
+Maecenas faucibus fermentum justo, in interdum nibh laoreet vitae. In vitae vehicula nisi. 
+Sed ac mi leo. Duis mollis facilisis tempor. Nullam ligula ex, interdum vel sollicitudin sed, faucibus eu tortor. 
+Cras fermentum nisi ac nibh laoreet ultricies. Curabitur elementum dapibus felis eget dignissim. Vestibulum nec pellentesque velit. 
+Nulla id pulvinar augue. Pellentesque venenatis ultrices commodo. Nam a pellentesque dui, a consequat nulla. 
+Suspendisse quis lacus malesuada dui consectetur pharetra sit amet ut eros. Nam dapibus lectus sit amet erat convallis faucibus. 
+Sed efficitur imperdiet hendrerit. Praesent eu viverra neque, non ornare tortor.
+</p>
+{% endblock %}

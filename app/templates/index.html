@@ -1,19 +1,16 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Jaskier</title>
-    </head>
-    <body>
-        <p>Some Text</p>
-        <form action="greet" method="post">
-            {% for message in get_flashed_messages()%}
-                <p> {{message}} </p>
-            {% endfor %}
-            <br>
-            <input type="text" name="name_input">
-            <br>
-            <input type="submit" value="GREET" id="greet">
-        </form>
-    </body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}Hello World!{% endblock %}
+
+{% block content %}
+<h1 class="roboto-bold">Hello World!</h1>
+{% for message in get_flashed_messages()%}
+    <p> {{message}} </p>
+{% endfor %}
+<form action="greet" method="post">
+    <br>
+    <input type="text" name="name_input">
+    <br>
+    <input type="submit" value="GREET" id="greet">
+</form>
+{% endblock %}

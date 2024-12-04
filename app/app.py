@@ -13,3 +13,8 @@ def index():
 def greet():
     flash("Hello there, " + str(request.form['name_input']))
     return render_template("index.html")
+
+
+@main_app.route("/page1")
+def page1():
+    return render_template("page1.html")
