@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Greetins!{% endblock %}
+
+{% block content %}
+
+{% from "_formhelpers.html" import render_field %}
+<form method="post" action="/greet">
+        {{ render_field(form.user_name) }}
+        {{ render_field(form.nick_name) }}
+    <p>
+        <input type="submit" value="Send">
+</form>
+
+{% endblock %}

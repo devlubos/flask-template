@@ -16,4 +16,4 @@ Just use command:
 
 ## DOC
 * Flask documentation https://flask.palletsprojects.com/en/stable/
-
+* Flask & WTForms https://flask.palletsprojects.com/en/stable/patterns/wtforms/
