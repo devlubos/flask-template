@@ -1,6 +1,9 @@
 # FLASK Template
 
-This project is an example how Flask application can be 
+This project is an example how Flask application can be used to display simple website.
+Things included:
+* package split
+* WTForms
 
 ## Installation
 
@@ -16,4 +19,4 @@ Just use command:
 
 ## DOC
 * Flask documentation https://flask.palletsprojects.com/en/stable/
-
+* Flask & WTForms https://flask.palletsprojects.com/en/stable/patterns/wtforms/

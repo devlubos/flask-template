@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body {
-    text-align: center;
+    /* text-align: center; */
     background-color: rgb(247, 247, 247);
     font-family: "Lato";
     font-style: normal;
@@ -12,13 +12,15 @@ body {
 
 .menu {
     padding: 10px;
-
+    max-width: 600px;
+    margin: 0 auto;
+    /* text-align: center; */
 }
 
 
 .content {
     padding: 10px;
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -49,4 +51,14 @@ a:hover, a:active {
     color: lightblue;
     text-decoration: none;
     transition: 0.3s;
+}
+
+.align-center {
+    text-align: center;
+}
+
+img.align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

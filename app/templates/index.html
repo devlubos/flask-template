@@ -3,23 +3,12 @@
 {% block title %}Hello World!{% endblock %}
 
 {% block content %}
-<img src="./static/logo.png" style="heigh: 200px; width: 200px;">
+<img src="./static/logo.png" style="width: 300px" class="align-center">
 
 <h1 class="roboto-bold">Hello World!</h1>
-{% for message in get_flashed_messages()%}
-    <p> {{message}} </p>
-{% endfor %}
-
 <p>
-    This website is an example of how website can be build with Flask.
+    Welcome to this template page. This website is an example of how website can be build with Flask. Use menu in top to see how it works.
     <br>
-    Use menu in top to see how it act.
+    Make sure that you installed all requirements before start.
 </p>
-<!--
-<form action="greet" method="post">
-    <br>
-    <input type="text" name="name_input">
-    <br>
-    <input type="submit" value="GREET" id="greet">
-</form>-->
 {% endblock %}
