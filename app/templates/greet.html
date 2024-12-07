@@ -5,11 +5,10 @@
 {% block content %}
 
 {% from "_formhelpers.html" import render_field %}
-<form method="post" action="/greet">
-        {{ render_field(form.user_name) }}
-        {{ render_field(form.nick_name) }}
+<form method="post" action="/greet" class="align-center">
+        {{ render_field(form.user_name, class='input-field') }}
+        {{ render_field(form.nick_name, class='input-field') }}
     <p>
         <input type="submit" value="Send">
 </form>
-
 {% endblock %}
