@@ -1,6 +1,9 @@
 # FLASK Template
 
-This project is an example how Flask application can be 
+This project is an example how Flask application can be used to display simple website.
+Things included:
+* package split
+* WTForms
 
 ## Installation
 
