@@ -5,7 +5,7 @@ main_app = Blueprint('main_app', __name__)
 
 @main_app.route("/")
 def index():
-    flash("what's your name?")
+    # flash("what's your name?")
     return render_template("index.html")
 
 
